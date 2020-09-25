@@ -49,10 +49,10 @@ namespace TestGame.objects
         public override void Step()
         {
             if (Keyboard.GetState().IsKeyDown(Keys.LeftShift)) speed = 3; else speed = 8;
-            if (Keyboard.GetState().IsKeyDown(Keys.J)) position.X-=speed;
-            if (Keyboard.GetState().IsKeyDown(Keys.L)) position.X+=speed;
-            if (Keyboard.GetState().IsKeyDown(Keys.I)) position.Y-=speed;
-            if (Keyboard.GetState().IsKeyDown(Keys.K)) position.Y+=speed;
+            if (Keyboard.GetState().IsKeyDown(Keys.Left)) position.X-=speed;
+            if (Keyboard.GetState().IsKeyDown(Keys.Right)) position.X+=speed;
+            if (Keyboard.GetState().IsKeyDown(Keys.Up)) position.Y-=speed;
+            if (Keyboard.GetState().IsKeyDown(Keys.Down)) position.Y+=speed;
             foreach(Danmaku obj in Game1.stepList.OfType<Danmaku>())
             {
                 int hboxSize = 4;
