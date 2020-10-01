@@ -97,5 +97,7 @@ namespace TestGame
         {
             return obj.position + (obj.scale / 2);
         }
+       
     }
 }
+
